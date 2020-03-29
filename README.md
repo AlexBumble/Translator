@@ -1,7 +1,7 @@
 # Translator
 
-Platform: iOS 13.4+
-Language: Swift 5
+- Platform: iOS 13.4+
+- Language: Swift 5
 
 ### Build introduction
 
