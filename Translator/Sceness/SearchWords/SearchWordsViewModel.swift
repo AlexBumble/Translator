@@ -11,7 +11,7 @@ import Combine
 final class SearchWordsViewModel: ObservableObject {
     
     private var searchTextLast = ""
-    private var translatePageLast = 0
+    private var pageLastValue = 0
     private let skyengAPI: Translatable
     private var disposables = Set<AnyCancellable>()
     @Published var searchText = ""
@@ -54,7 +54,7 @@ final class SearchWordsViewModel: ObservableObject {
                     page: self.translatePage)
                 
                 self.searchTextLast = searchText
-                self.translatePageLast = self.translatePage
+                self.pageLastValue = self.translatePage
                 self.isPageLoading = false
             }
         }
@@ -74,7 +74,7 @@ final class SearchWordsViewModel: ObservableObject {
         if searchTextLast != searchText {
             translatePage = 1
             dataSource.removeAll()
-        } else if page == translatePageLast {
+        } else if page == pageLastValue {
             return
         }
         dataSource.append(contentsOf: data)

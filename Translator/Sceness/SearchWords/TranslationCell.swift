@@ -1,5 +1,5 @@
 //
-//  SearchWordsCell.swift
+//  TranslationCell.swift
 //  Translator
 //
 //  Created by Алексей Бузов on 29.03.2020.
@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct SearchWordsCell: View {
+struct TranslationCell: View {
     
-    let possibleTranslation: PosibleTranslation
+    let translation: PosibleTranslation
     @EnvironmentObject var viewModel: SearchWordsViewModel
     
     var body: some View {
@@ -18,11 +18,12 @@ struct SearchWordsCell: View {
             HStack {
                 Text("Possible translation:")
                     .fontWeight(.light)
-                Text(possibleTranslation.text)
+                    .fixedSize()
+                Text(translation.text)
                     .bold()
             }
             .padding(.horizontal, 8)
-            if self.viewModel.isPageLoading && self.viewModel.dataSource.isLast(possibleTranslation) {
+            if self.viewModel.isPageLoading && self.viewModel.dataSource.isLast(translation) {
                 Divider()
                 ActivitiyIndicator()
             }
@@ -34,6 +35,6 @@ struct SearchWordsCell: View {
 
 struct SearchWordsCell_Previews: PreviewProvider {
     static var previews: some View {
-        SearchWordsCell(possibleTranslation: PosibleTranslation(text: "example", meanings: []))
+        TranslationCell(translation: PosibleTranslation(text: "transport system workstation", meanings: [])).environmentObject(SearchWordsViewModel())
     }
 }

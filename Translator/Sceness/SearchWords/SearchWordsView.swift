@@ -22,33 +22,34 @@ struct SearchWordsView: View {
                     ActivitiyIndicator()
                     Spacer()
                 } else {
-                    posibleTranslationList
+                    translationList
                 }
             }
             .navigationBarTitle(
                 "Searching",
                 displayMode: .inline)
         }
+
     }
     
-    private var posibleTranslationList: some View {
+    private var translationList: some View {
         List(viewModel.dataSource) { item in
-            NavigationLink(destination: self.createCellDestination(item.meanings)) {
-                self.createSearchWordsCell(item)
+            NavigationLink(destination: self.meaningDestination(with: item)) {
+                self.createTranslationCell(item)
             }
         }
     }
     
-    private func createCellDestination(_ data: [Meaning]) -> some View {
+    private func meaningDestination(with data: PosibleTranslation) -> some View {
         LazyView(
-            WordsMeaningView()
-                .environmentObject(WordsMeaningViewModel(meanings:  data)))
+            MeaningView(text: data.text)
+                .environmentObject(MeaningViewModel(meanings:  data.meanings)))
     }
     
-    private func createSearchWordsCell(_ possibleTranslation: PosibleTranslation) -> some View {
-        SearchWordsCell(possibleTranslation: possibleTranslation)
+    private func createTranslationCell(_ translation: PosibleTranslation) -> some View {
+        TranslationCell(translation: translation)
             .onAppear() {
-                if self.viewModel.dataSource.isLast(possibleTranslation) {
+                if self.viewModel.dataSource.isLast(translation) {
                     self.viewModel.loadNewPage()
                 }
         }

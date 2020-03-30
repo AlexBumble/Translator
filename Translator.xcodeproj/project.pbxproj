@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81105C412430A94B001D671A /* WordsMeaningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81105C402430A94B001D671A /* WordsMeaningViewModel.swift */; };
+		81105C412430A94B001D671A /* MeaningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81105C402430A94B001D671A /* MeaningViewModel.swift */; };
 		8141F599243062EF00F9B061 /* IdentifiableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F598243062EF00F9B061 /* IdentifiableExtensions.swift */; };
 		8141F59C2430631A00F9B061 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F59B2430631A00F9B061 /* SearchBarView.swift */; };
 		8141F59F243063E800F9B061 /* PosibleTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F59E243063E800F9B061 /* PosibleTranslation.swift */; };
@@ -20,9 +20,9 @@
 		8141F5B42430873200F9B061 /* ActivitiyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5B32430873200F9B061 /* ActivitiyIndicator.swift */; };
 		8141F5B62430874C00F9B061 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5B52430874C00F9B061 /* ImageView.swift */; };
 		8141F5B82430879000F9B061 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5B72430879000F9B061 /* LazyView.swift */; };
-		8141F5BB2430886C00F9B061 /* SearchWordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5BA2430886C00F9B061 /* SearchWordsCell.swift */; };
+		8141F5BB2430886C00F9B061 /* TranslationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5BA2430886C00F9B061 /* TranslationCell.swift */; };
 		8141F5BD24308AB700F9B061 /* RandomAccessCollectionExtsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5BC24308AB700F9B061 /* RandomAccessCollectionExtsions.swift */; };
-		8141F5C02430908500F9B061 /* WordsMeaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5BF2430908500F9B061 /* WordsMeaningView.swift */; };
+		8141F5C02430908500F9B061 /* MeaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5BF2430908500F9B061 /* MeaningView.swift */; };
 		8141F5C22430945500F9B061 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5C12430945500F9B061 /* NetworkLayer.swift */; };
 		816D1DC22430C4E7001CADD2 /* RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816D1DC12430C4E7001CADD2 /* RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift */; };
 		81B498BD24306125001076EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B498BC24306125001076EE /* AppDelegate.swift */; };
@@ -44,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		81105C402430A94B001D671A /* WordsMeaningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsMeaningViewModel.swift; sourceTree = "<group>"; };
+		81105C402430A94B001D671A /* MeaningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningViewModel.swift; sourceTree = "<group>"; };
 		8141F598243062EF00F9B061 /* IdentifiableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableExtensions.swift; sourceTree = "<group>"; };
 		8141F59B2430631A00F9B061 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		8141F59E243063E800F9B061 /* PosibleTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosibleTranslation.swift; sourceTree = "<group>"; };
@@ -57,9 +57,9 @@
 		8141F5B32430873200F9B061 /* ActivitiyIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiyIndicator.swift; sourceTree = "<group>"; };
 		8141F5B52430874C00F9B061 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		8141F5B72430879000F9B061 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
-		8141F5BA2430886C00F9B061 /* SearchWordsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWordsCell.swift; sourceTree = "<group>"; };
+		8141F5BA2430886C00F9B061 /* TranslationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationCell.swift; sourceTree = "<group>"; };
 		8141F5BC24308AB700F9B061 /* RandomAccessCollectionExtsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollectionExtsions.swift; sourceTree = "<group>"; };
-		8141F5BF2430908500F9B061 /* WordsMeaningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsMeaningView.swift; sourceTree = "<group>"; };
+		8141F5BF2430908500F9B061 /* MeaningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningView.swift; sourceTree = "<group>"; };
 		8141F5C12430945500F9B061 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		816D1DBF2430C4E7001CADD2 /* TranslatorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		816D1DC12430C4E7001CADD2 /* RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				8141F5B92430884000F9B061 /* SearchWords */,
-				8141F5BE2430905000F9B061 /* WordMeaning */,
+				8141F5BE2430905000F9B061 /* Meaning */,
 			);
 			path = Sceness;
 			sourceTree = "<group>";
@@ -145,20 +145,20 @@
 		8141F5B92430884000F9B061 /* SearchWords */ = {
 			isa = PBXGroup;
 			children = (
-				8141F5BA2430886C00F9B061 /* SearchWordsCell.swift */,
+				8141F5BA2430886C00F9B061 /* TranslationCell.swift */,
 				81B498C024306125001076EE /* SearchWordsView.swift */,
 				8141F5AA243079FD00F9B061 /* SearchWordsViewModel.swift */,
 			);
 			path = SearchWords;
 			sourceTree = "<group>";
 		};
-		8141F5BE2430905000F9B061 /* WordMeaning */ = {
+		8141F5BE2430905000F9B061 /* Meaning */ = {
 			isa = PBXGroup;
 			children = (
-				8141F5BF2430908500F9B061 /* WordsMeaningView.swift */,
-				81105C402430A94B001D671A /* WordsMeaningViewModel.swift */,
+				8141F5BF2430908500F9B061 /* MeaningView.swift */,
+				81105C402430A94B001D671A /* MeaningViewModel.swift */,
 			);
-			path = WordMeaning;
+			path = Meaning;
 			sourceTree = "<group>";
 		};
 		816D1DC02430C4E7001CADD2 /* TranslatorAppTests */ = {
@@ -331,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81105C412430A94B001D671A /* WordsMeaningViewModel.swift in Sources */,
+				81105C412430A94B001D671A /* MeaningViewModel.swift in Sources */,
 				8141F5B62430874C00F9B061 /* ImageView.swift in Sources */,
 				8141F59C2430631A00F9B061 /* SearchBarView.swift in Sources */,
 				8141F5C22430945500F9B061 /* NetworkLayer.swift in Sources */,
@@ -340,7 +340,7 @@
 				8141F5A32430642200F9B061 /* MeaningTranslation.swift in Sources */,
 				81B498BD24306125001076EE /* AppDelegate.swift in Sources */,
 				8141F5BD24308AB700F9B061 /* RandomAccessCollectionExtsions.swift in Sources */,
-				8141F5C02430908500F9B061 /* WordsMeaningView.swift in Sources */,
+				8141F5C02430908500F9B061 /* MeaningView.swift in Sources */,
 				8141F59F243063E800F9B061 /* PosibleTranslation.swift in Sources */,
 				8141F5B024307EA800F9B061 /* JSONEncodable.swift in Sources */,
 				81B498BF24306125001076EE /* SceneDelegate.swift in Sources */,
@@ -349,7 +349,7 @@
 				8141F5A12430641300F9B061 /* Meaning.swift in Sources */,
 				8141F599243062EF00F9B061 /* IdentifiableExtensions.swift in Sources */,
 				8141F5A92430661E00F9B061 /* NetworkError.swift in Sources */,
-				8141F5BB2430886C00F9B061 /* SearchWordsCell.swift in Sources */,
+				8141F5BB2430886C00F9B061 /* TranslationCell.swift in Sources */,
 				8141F5AB243079FD00F9B061 /* SearchWordsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

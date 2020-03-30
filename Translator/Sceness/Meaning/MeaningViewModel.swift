@@ -1,5 +1,5 @@
 //
-//  WordsMeaningViewModel.swift
+//  MeaningViewModel.swift
 //  Translator
 //
 //  Created by Алексей Бузов on 29.03.2020.
@@ -9,16 +9,16 @@
 import SwiftUI
 import Combine
 
-final class WordsMeaningViewModel: ObservableObject {
+final class MeaningViewModel: ObservableObject {
     
-    @Published private(set) var meaning: [Meaning]
+    @Published private(set) var meanings: [Meaning]
     @Published private(set) var image: UIImage?
     @Published private(set) var isImageLoading: Bool = false
     private var disposables = Set<AnyCancellable>()
     
     init(meanings: [Meaning]) {
-        self.meaning = meanings
-        $meaning
+        self.meanings = meanings
+        $meanings
             .sink (receiveValue: { searchText in
                 self.loadImage(path: meanings[0].imageUrl)
             })
