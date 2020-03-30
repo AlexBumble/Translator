@@ -18,7 +18,7 @@ class RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest: XCTe
         PosibleTranslation(text: "home", meanings: []),
     ]
 
-    func testIsLastEmpty() {
+    func testIsLastEmptyList() {
         let collection = [PosibleTranslation]()
         let item = PosibleTranslation(text: "item", meanings: [])
         
@@ -35,7 +35,7 @@ class RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest: XCTe
     }
 
     func testIsLastWithFirstElement() {
-        let item = PosibleTranslation(text: "item", meanings: [])
+        let item = PosibleTranslation(text: "go", meanings: [])
 
         let result = posibleTranslations.isLast(item)
         XCTAssertFalse(result)
@@ -46,6 +46,13 @@ class RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest: XCTe
 
         let result = posibleTranslations.isLast(item)
         XCTAssertTrue(result)
+    }
+
+    func testIsLastWithLastSimilarValue() {
+        let item = PosibleTranslation(text: "home_", meanings: [])
+
+        let result = posibleTranslations.isLast(item)
+        XCTAssertFalse(result)
     }
     
 }
