@@ -17,6 +17,7 @@ struct SearchWordsView: View {
             VStack {
                 SearchBarView(barText: "Search english words for translate",
                               searchText: $viewModel.searchText)
+				// ActivitiyIndicator while downloading
                 if viewModel.isPageLoading && viewModel.translatePage == 1 {
                     Spacer()
                     ActivitiyIndicator()
@@ -40,12 +41,14 @@ struct SearchWordsView: View {
         }
     }
     
+	// Cell's NavigationLink's destination
     private func meaningDestination(with data: PosibleTranslation) -> some View {
         LazyView(
             MeaningView(text: data.text)
                 .environmentObject(MeaningViewModel(meanings:  data.meanings)))
     }
     
+	// Paging
     private func createTranslationCell(_ translation: PosibleTranslation) -> some View {
         TranslationCell(translation: translation)
             .onAppear() {
