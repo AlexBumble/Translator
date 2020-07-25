@@ -24,7 +24,6 @@
 		8141F5BD24308AB700F9B061 /* RandomAccessCollectionExtsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5BC24308AB700F9B061 /* RandomAccessCollectionExtsions.swift */; };
 		8141F5C02430908500F9B061 /* MeaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5BF2430908500F9B061 /* MeaningView.swift */; };
 		8141F5C22430945500F9B061 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141F5C12430945500F9B061 /* NetworkLayer.swift */; };
-		816D1DC22430C4E7001CADD2 /* RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816D1DC12430C4E7001CADD2 /* RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift */; };
 		81B498BD24306125001076EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B498BC24306125001076EE /* AppDelegate.swift */; };
 		81B498BF24306125001076EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B498BE24306125001076EE /* SceneDelegate.swift */; };
 		81B498C124306125001076EE /* SearchWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B498C024306125001076EE /* SearchWordsView.swift */; };
@@ -62,8 +61,6 @@
 		8141F5BF2430908500F9B061 /* MeaningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningView.swift; sourceTree = "<group>"; };
 		8141F5C12430945500F9B061 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		816D1DBF2430C4E7001CADD2 /* TranslatorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		816D1DC12430C4E7001CADD2 /* RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift; sourceTree = "<group>"; };
-		816D1DC32430C4E7001CADD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81B498B924306125001076EE /* Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B498BC24306125001076EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81B498BE24306125001076EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,20 +158,10 @@
 			path = Meaning;
 			sourceTree = "<group>";
 		};
-		816D1DC02430C4E7001CADD2 /* TranslatorAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				816D1DC12430C4E7001CADD2 /* RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift */,
-				816D1DC32430C4E7001CADD2 /* Info.plist */,
-			);
-			path = TranslatorAppTests;
-			sourceTree = "<group>";
-		};
 		81B498B024306125001076EE = {
 			isa = PBXGroup;
 			children = (
 				81B498BB24306125001076EE /* Translator */,
-				816D1DC02430C4E7001CADD2 /* TranslatorAppTests */,
 				81B498BA24306125001076EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -323,7 +310,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				816D1DC22430C4E7001CADD2 /* RandomAccessCollectionExtsionsTestRandomAccessCollectionExtsionsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A53QZ5K7ZS;
 				INFOPLIST_FILE = TranslatorAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,6 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A53QZ5K7ZS;
 				INFOPLIST_FILE = TranslatorAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,6 +527,7 @@
 				DEVELOPMENT_TEAM = A53QZ5K7ZS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Translator/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,6 +548,7 @@
 				DEVELOPMENT_TEAM = A53QZ5K7ZS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Translator/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
