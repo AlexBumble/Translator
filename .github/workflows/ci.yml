@@ -16,4 +16,4 @@ jobs:
     - name: Run tests
       run: xcodebuild -project 'Translator.xcodeproj' -scheme 'Translator' -destination 'platform=IOS Simulator,name=iPhone 8' test
     - name: Build app
-      run: xcodebuild -project 'Translator.xcodeproj' -scheme 'Translator' -destination 'generic/platform=IOS' -configuration Release build CODE_SINGNING_ALLOWED=NO
+      run: xcodebuild -project 'Translator.xcodeproj' -scheme 'Translator' -destination 'generic/platform=IOS' -configuration Release build CODE_SIGNING_ALLOWED=NO
